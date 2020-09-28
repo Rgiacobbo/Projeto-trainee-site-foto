@@ -12,7 +12,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 	<!-- .css -->
-	<link href="css/css-personalizado.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <!--================================================================================================================== 
@@ -24,8 +24,9 @@
 	<!-- home -->
 	<div class="home-bg">
 		<div class="home-fx">
+			<!-- logo e menu -->
 			<div class="logo">
-				<!-- logo -->
+				<!-- logo imagem -->
 				<img src="img/logo.svg"></img>
 				
 				<!-- menu -->
@@ -44,6 +45,18 @@
 				</div>
 
 			</div>
+			
+			<!-- msg -->
+			<div class="col-12 home-msg d-md-none">
+				<p class="p1-md">Salve suas</p>
+				<p class="p2-md">melhores</p>
+				<p class="p3-md">memórias!</p>
+			</div>
+			<div class="col-12 home-msg d-none d-md-block">
+				<p class="p1-lg">Salve suas</p>
+				<p class="p2-lg">melhores</p>
+				<p class="p3-lg">memórias!</p>
+			</div>
 		</div>
 	</div>
 
@@ -51,67 +64,99 @@
 	<div class="conteudo">
 
 		<!--- BOTAO MENU-->
-		<nav class="navbar navbar-expand-lg navbar-light sticky-top">
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		<nav class="d-sm-none navbar navbar-expand-sm navbar-light sticky-top">
+			<!--- BOTÃO -->
+			<button class="navbar-toggler" style="background-color: #fff;" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
-
+			<!--- ITENS MENU -->
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			  <a class="navbar-brand" href="#">Hidden brand</a>
 			  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-				  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-				</li>
+				<li class="nav-item"><a class="nav-link2" href="#">HOME</a></li>
+				<li class="nav-item"><a class="nav-link2" href="#PORTFOLIO">PORTFOLIO</a></li>
+				<li class="nav-item"><a class="nav-link2" href="#SOBREMIM">SOBRE MIM</a></li>
+				<li class="nav-item"><a class="nav-link2" href="#CONTATO">CONTATO</a></li>
 			  </ul>
 			</div>
-		  </nav>
+		</nav>
 
 		<!--- PORTFOLIO -->
-		<div class="" id="PORTFOLIO" style="display:block; height: 608px; background-color: rgb(199, 199, 209);">
-			<p>portfolio</p>
+		<div class="" id="PORTFOLIO" style="height: 608px;">
+			<div class="cabecalho"><h3>Portfolio</h3></div>
+
+			<!-- SLIDE -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<!-- FLECHA -->
+				<ol class="carousel-indicators">
+				  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+
+				<!-- ITENS DO SLIDE -->
+				<div class="carousel-inner" style="height: 400px; width: 100%">
+				  <div class="carousel-item active">
+					<img class="d-block w-1" style="margin: auto; height: 100%; width: 100%" src="img/home-bg.jpg" alt="Primeiro Slide">
+					<div class="carousel-caption" style="bottom: 10px;">
+						<h5>Book 15 anos</h5>
+						<p>Juliana</p>
+					  </div>
+				</div>
+				  <div class="carousel-item">
+					<img class="d-block w-1" style="margin-left: auto; margin-right: auto; height: 100%; width: 100%" src="img/eu.jpg" alt="Segundo Slide">
+					<div class="carousel-caption">
+						<h5>Maria Eduarda</h5>
+						<p>testo teste</p>
+					  </div>
+				</div>
+				  <div class="carousel-item">
+					<img class="d-block w-1" style="margin-left: auto; margin-right: auto; height: 500px" src="../Projeto-trainee-site-foto/img/port3.jpg" alt="Terceiro Slide">
+					<div class="carousel-caption">
+						<h5>...</h5>
+						<p>...</p>
+					  </div>
+				</div>
+				</div>
+				<!-- BOTÕES DE PROX E ANT -->
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Anterior</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Próximo</span>
+				</a>
+			  </div>
+
 		</div>
 
-		<!--- PORTFOLIO -->
-		<div class="" id="SOBREMIM" style="display:block; height: 608px; background-color: white;">
-			<p>sobremim</p>
+		<!--- SOBRE MIM -->
+		<div class="" id="SOBREMIM" style="height: 608px;">
+			<div class="cabecalho"><h3>Sobre Mim</h3></div>
 		</div>
 		
 		<!--- CONTATO -->
-		<div class="" id="CONTATO" style="display:block; height: 608px; background-color: rgb(199, 199, 209)">
-			<p>contato</p>
+		<div class="" id="CONTATO" style="height: 508px;">
+			<div class="cabecalho"><h3>Contato</h3></div>
 		</div>
 
-  </div>
+	</div>
 
-  
-  
-  <footer class="footer">
-    <div class="container" style="margin: 0px; padding: 0px;" >
-      <div class="row">
-        <div class="col-1" style="margin-top: 20px;">
-          <img class="" src="img/logo.svg" height="50px" width="250px">
-        </div>
-
-        <div class="col-8">
-
-        </div>
-
-        <div class="col-auto">
-          <p class="text-with" style="margin-top: 85px; font-size: 11px;">
-            &copy; 2020 <b> HACKEN EJ </b> desenvolvido por <b> GRUPO B </b>
-          </p>
-        </div>
-      </div>
-      
-
-  </footer>
+	<!--- FOOTER -->
+	<footer class="footer">
+		<div class="container col-12" style="background-color: #154778" >
+			<div class="row" style="height: 100%; width: 100%;">
+				<div class="col-lg-6 col-md-12">
+					<img class="footer-logo" src="img/logo.svg">
+				</div>
+				<div class="col-lg-6 col-md-12 text-footer">
+					<p></p>
+					<p>&copy; 2020 <b>HAKEN EJ</b></p>
+					<p>desenvolvido por <b>GRUPO B</b></p>
+				</div>
+			</div>
+		</div>	
+	</footer>
 
 
 	<!--- JQUERY -->
