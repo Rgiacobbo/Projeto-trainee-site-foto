@@ -14,14 +14,6 @@ html, body {
   box-sizing: border-box;
 }
 
-#SOBREMIM {
-  margin-top: 100px;
-}
-
-#CONTATO {
-  margin-top: 10px;
-}
-
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -35,8 +27,8 @@ html, body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/*--- SITE --*/
-/*--- HOME --*/
+/*--- SITE ---*/
+/*--- HOME ---*/
 .home-fx {
   background: url(img/home-bottom-fx.svg) no-repeat bottom;
   background-size: cover;
@@ -60,17 +52,6 @@ html, body {
   margin-top: 0px;
 }
 
-.scrollToTop{   
-  position:fixed;
-  bottom: 0px; 
-  right:40px;
-  opacity: 0.5;
-}
-
-.scrollToTop:hover{
-  opacity: 1;
-}
-
 .navbar-nav{
   margin: 0 auto;
 }
@@ -83,7 +64,7 @@ html, body {
 }
 
 .nav-link:hover{
-  color: #8A0B0B;
+  color: #da020d;
 }
 
 hr.divisor{
@@ -91,6 +72,7 @@ hr.divisor{
   border-right: 2px solid #ffffff;
 }
 
+/*--- SALVE SUAS MEMORIAS --*/
 .home-msg{
   position: absolute;
   bottom: 0px;
@@ -104,7 +86,7 @@ hr.divisor{
   position: absolute;
   width: 100%;
   font-size: 45px;
-  color: #000;
+  color: #252525;
   transform: rotate(-5deg);
   left: 25%;
   bottom: 190px;
@@ -113,7 +95,7 @@ hr.divisor{
   position: absolute;
   width: 100%;
   font-size: 50px;
-  color: #154778;
+  color: #da020d;
   transform: rotate(-5deg);
   left: 5%;
   bottom: 130px;
@@ -122,7 +104,7 @@ hr.divisor{
   position: absolute;
   width: 100%;
   font-size: 70px;
-  color: #000;
+  color: #252525;
   transform: rotate(-5deg);
   left: 10%;
   bottom: 60px;
@@ -132,31 +114,31 @@ hr.divisor{
   position: absolute;
   width: 100%;
   font-size: 70px;
-  color: #000;
+  color: #252525;
   transform: rotate(-5deg);
-  left: 35%;
+  left: 30%;
   bottom: 230px;
 }
 .p2-lg{
   position: absolute;
   width: 100%;
   font-size: 80px;
-  color: #154778;
+  color: #da020d;
   transform: rotate(-5deg);
-  left: 15%;
+  left: 10%;
   bottom: 160px;
 }
 .p3-lg{
   position: absolute;
   width: 100%;
   font-size: 100px;
-  color: #000;
+  color: #252525;
   transform: rotate(-5deg);
-  left: 25%;
+  left: 20%;
   bottom: 100px;
 }
 
-/*--- BOTÃO MENU --*/
+/*--- BOTÃO MENU ---*/
 .nav-link2{
   color: #303030;
   font-size: 14px;
@@ -166,27 +148,79 @@ hr.divisor{
 
 .nav-link2:hover{
   text-decoration: none;
-  color: #154778;
+  color: #da020d;
 }
 
-/*--- CONTEUDO --*/
+/*--- SCROLL TO TOP ---*/
+.scrollToTop{   
+  position:fixed;
+  bottom: 2%; 
+  right: 2%;
+  opacity: 0.5;
+}
+
+.scrollToTop:hover{
+  opacity: 1;
+}
+
+/*--- CONTEUDO ---*/
 .cabecalho{
   width: 40%;
   margin: 0 auto;
   margin-bottom: 50px;
   padding-top: 50px;
-  border-bottom: 2px solid #154778;
+  border-bottom: 2px solid #e01313;
   text-align: center;
   color: #303030;
 }
 
 h3{
   font-weight: bold;
-
 }
 
+/*--- PORTFOLIO ---*/
 
-/*--- FOOTER --*/
+.carousel-item{
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 285px;
+  line-height: 0.2;
+}
+
+/* .carousel-control-prev-icon{
+  background-image: url("img/leftarrow_121320.svg");
+}
+
+.carousel-control-next-icon{
+  background-image: url("img/rightarrow_121279.svg");
+}  */
+
+/*--- SOBREMIM ---*/
+.img-sobremim{
+  background: url(img/sobremim.jpg) no-repeat center;
+  background-size: cover;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 100%;
+  margin: auto;
+}
+
+/*--- CONTATO ---*/
+.img-cont{
+  max-width: 90%;
+  max-height: 150px;
+}
+
+.img-contato:hover{
+  opacity: 0.5;
+}
+
+/*--- FOOTER ---*/
 .footer {
   bottom: 0;
   width: 100%;
@@ -199,6 +233,7 @@ h3{
   margin: auto;
   width: 50%;
   min-width: 300px;
+  max-width: 100% !important;
 }
 
 .text-footer{
@@ -263,11 +298,6 @@ figure {
     padding: 1rem;
 }
 
-.img-contato:hover{
-  opacity: 0.5;
-}
-
-
 
 
 /*
@@ -286,22 +316,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-.slide-porfolio{
-  height: 500px;
-  width: 1000px !important;
-}
-
-.carousel-control-prev-icon{
-  background-image: url("img/leftarrow_121320.svg");
-}
-
-.carousel-control-next-icon{
-  background-image: url("img/rightarrow_121279.svg");
-}
-
-
-
-
-
-
