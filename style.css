@@ -14,6 +14,14 @@ html, body {
   box-sizing: border-box;
 }
 
+#SOBREMIM {
+  margin-top: 100px;
+}
+
+#CONTATO {
+  margin-top: 10px;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -52,6 +60,17 @@ html, body {
   margin-top: 0px;
 }
 
+.scrollToTop{   
+  position:fixed;
+  bottom: 0px; 
+  right:40px;
+  opacity: 0.5;
+}
+
+.scrollToTop:hover{
+  opacity: 1;
+}
+
 .navbar-nav{
   margin: 0 auto;
 }
@@ -64,7 +83,7 @@ html, body {
 }
 
 .nav-link:hover{
-  color: #154778;
+  color: #8A0B0B;
 }
 
 hr.divisor{
@@ -244,6 +263,9 @@ figure {
     padding: 1rem;
 }
 
+.img-contato:hover{
+  opacity: 0.5;
+}
 
 
 
@@ -265,7 +287,18 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
+.slide-porfolio{
+  height: 500px;
+  width: 1000px !important;
+}
 
+.carousel-control-prev-icon{
+  background-image: url("img/leftarrow_121320.svg");
+}
+
+.carousel-control-next-icon{
+  background-image: url("img/rightarrow_121279.svg");
+}
 
 
 
